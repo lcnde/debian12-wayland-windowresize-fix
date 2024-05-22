@@ -1,0 +1,1 @@
+# debian-12-wayland-window-resize-glitch-fix
