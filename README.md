@@ -1,8 +1,10 @@
 # debian-12-wayland-window-resize-glitch-fix
 
+> Debian 12.5 bookworm, gnome-shell 43.9
+
 This repo explains how to fix graphical issues that appear when resizing windows that belong to Gnome software (ex. file manager, calculator app, text editor, settings). The issue has been discussed [on this Github thread](https://github.com/NVIDIA/egl-wayland/issues/57) and has been resolved. 
 
-Since Debian runs software that's a little bit older, this repo explains how to fix the issue for Debian 12.0.5 bookworm.
+Since Debian runs software that's a little bit older, this repo explains how to fix the issue for Debian 12.5 bookworm.
 
 The problem is caused by the package `libnvidia-egl-wayland1:1.1.10`. We want to update it to version `1.1.13`. We can find the newer version  of the package in the Debian "trixie" repository, which is currently the "testing" branch. We are going to add this branch to our apt sources and install this single package from the trixie repos.
 
